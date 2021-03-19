@@ -1,8 +1,7 @@
 
 let getString = function () {
-  return myGreeting;
+  return process.argv[2];
 }
 
-let myGreeting = "Hello World!";
-let testStr = getString();
-console.log(myGreeting);
+let testStr = "hello, " + getString();
+console.log(testStr);
